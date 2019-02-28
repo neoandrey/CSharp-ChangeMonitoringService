@@ -19414,3 +19414,261 @@ Parameter name: index
 2018-03-21 18:14:59=>Executing script: SELECT  entity_id,name FROM reports_entity_20180315_040854
 2018-03-21 18:14:59=>No changes recorded for reports_entity at 2018-03-21 06:14:59
 2018-03-21 18:14:59=>Executing script: SELECT * FROM column_table_change_history ORDER BY  ind_num DESC LIMIT  10
+=================================================Starting New Data Change Monitoring Session at 2019-02-28 11:00:22=================================================
+2019-02-28 11:00:22=>Number of tables to monitor: 2
+2019-02-28 11:00:22=>1 run for extract_entity
+2019-02-28 11:00:22=>Checking for schema changes
+2019-02-28 11:00:22=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'extract_entity'
+2019-02-28 11:00:22=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'extract_entity'
+2019-02-28 11:00:22=>Executing script: SELECT TABLE_NAME, COLUMN_NAME,ORDINAL_POSITION,COLUMN_DEFAULT,IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM  schema_table WHERE  table_name = 'extract_entity'
+2019-02-28 11:00:22=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'extract_entity'
+2019-02-28 11:00:22=>Running: DELETE FROM  schema_table WHERE  table_name = 'extract_entity'
+2019-02-28 11:00:22=>Query complete
+2019-02-28 11:00:22=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'extract_entity'
+2019-02-28 11:00:22=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','entity_id','1','','NO','int','')
+2019-02-28 11:00:22=>Query complete
+2019-02-28 11:00:22=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','plugin_id','2','','NO','varchar','20')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','name','3','','NO','varchar','30')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','standard_output','4','','NO','varchar','255')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','standard_output_list','5','','YES','varchar','4000')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','method_value','6','','NO','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','method_param_list','7','','YES','varchar','255')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','user_param_list','8','','YES','varchar','255')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','node_name_list_method','9','','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','node_name_list','10','','YES','varchar','1023')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','extract_pan_in_clear','11','((0))','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','retention_period','12','','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','include_screened_only','13','','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','primary_extract_entity','14','((0))','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','retention_period_cleaner','15','','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table_change_history( table_name,change_time,change_type,affected_columns,change_description) VALUES( 'extract_entity','2019-02-28 11:00:23','ALTER/CREATE','table_name:extract_entity;column_name:entity_id;ordinal_position:1;column_default:;is_nullable:NO;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:plugin_id;ordinal_position:2;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:20~table_name:extract_entity;column_name:name;ordinal_position:3;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:30~table_name:extract_entity;column_name:standard_output;ordinal_position:4;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:255~table_name:extract_entity;column_name:standard_output_list;ordinal_position:5;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:4000~table_name:extract_entity;column_name:method_value;ordinal_position:6;column_default:;is_nullable:NO;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:method_param_list;ordinal_position:7;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:255~table_name:extract_entity;column_name:user_param_list;ordinal_position:8;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:255~table_name:extract_entity;column_name:node_name_list_method;ordinal_position:9;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:node_name_list;ordinal_position:10;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:1023~table_name:extract_entity;column_name:extract_pan_in_clear;ordinal_position:11;column_default:((0));is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:retention_period;ordinal_position:12;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:include_screened_only;ordinal_position:13;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:primary_extract_entity;ordinal_position:14;column_default:((0));is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:retention_period_cleaner;ordinal_position:15;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:entity_id;column_name:1;ordinal_position:;column_default:NO;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:plugin_id;column_name:2;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:20;character_maximum_length:extract_entity~table_name:name;column_name:3;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:30;character_maximum_length:extract_entity~table_name:standard_output;column_name:4;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:255;character_maximum_length:extract_entity~table_name:standard_output_list;column_name:5;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:4000;character_maximum_length:extract_entity~table_name:method_value;column_name:6;ordinal_position:;column_default:NO;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:method_param_list;column_name:7;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:255;character_maximum_length:extract_entity~table_name:user_param_list;column_name:8;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:255;character_maximum_length:extract_entity~table_name:node_name_list_method;column_name:9;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:node_name_list;column_name:10;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:1023;character_maximum_length:extract_entity~table_name:extract_pan_in_clear;column_name:11;ordinal_position:((0));column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:retention_period;column_name:12;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:include_screened_only;column_name:13;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:primary_extract_entity;column_name:14;ordinal_position:((0));column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:retention_period_cleaner;column_name:15;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~','Row differences recorded')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Checking for DML changes
+2019-02-28 11:00:23=>Checking for DML changes
+2019-02-28 11:00:23=>Executing script: SELECT  entity_id = CONVERT(VARCHAR(MAX), entity_id),name = CONVERT(VARCHAR(MAX), name)  FROM extract_entity WITH (NOLOCK)
+2019-02-28 11:00:23=>Executing script: SELECT current_table_name FROM table_snapshot_history WHERE  ind_num = (SELECT MAX(ind_num) FROM  table_snapshot_history WHERE monitored_table_name = 'extract_entity')
+2019-02-28 11:00:23=>Executing script: SELECT  entity_id,name FROM extract_entity_20180111_104541
+2019-02-28 11:00:23=>No changes recorded for extract_entity at 2019-02-28 11:00:23
+2019-02-28 11:00:23=>2 run for reports_entity
+2019-02-28 11:00:23=>Checking for schema changes
+2019-02-28 11:00:23=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'reports_entity'
+2019-02-28 11:00:23=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'reports_entity'
+2019-02-28 11:00:23=>Executing script: SELECT TABLE_NAME, COLUMN_NAME,ORDINAL_POSITION,COLUMN_DEFAULT,IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM  schema_table WHERE  table_name = 'reports_entity'
+2019-02-28 11:00:23=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'reports_entity'
+2019-02-28 11:00:23=>Running: DELETE FROM  schema_table WHERE  table_name = 'reports_entity'
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'reports_entity'
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','entity_id','1','','NO','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','name','2','','YES','varchar','300')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','plugin_id','3','','NO','varchar','20')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','user_param_list','4','','YES','varchar','255')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','template_id','5','','YES','int','')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Running: INSERT INTO schema_table_change_history( table_name,change_time,change_type,affected_columns,change_description) VALUES( 'reports_entity','2019-02-28 11:00:23','ALTER/CREATE','table_name:reports_entity;column_name:entity_id;ordinal_position:1;column_default:;is_nullable:NO;data_type:int;character_maximum_length:~table_name:reports_entity;column_name:name;ordinal_position:2;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:300~table_name:reports_entity;column_name:plugin_id;ordinal_position:3;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:20~table_name:reports_entity;column_name:user_param_list;ordinal_position:4;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:255~table_name:reports_entity;column_name:template_id;ordinal_position:5;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:entity_id;column_name:1;ordinal_position:;column_default:NO;is_nullable:int;data_type:;character_maximum_length:reports_entity~table_name:name;column_name:2;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:300;character_maximum_length:reports_entity~table_name:plugin_id;column_name:3;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:20;character_maximum_length:reports_entity~table_name:user_param_list;column_name:4;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:255;character_maximum_length:reports_entity~table_name:template_id;column_name:5;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:reports_entity~','Row differences recorded')
+2019-02-28 11:00:23=>Query complete
+2019-02-28 11:00:23=>Checking for DML changes
+2019-02-28 11:00:23=>Checking for DML changes
+2019-02-28 11:00:23=>Executing script: SELECT  entity_id = CONVERT(VARCHAR(MAX), entity_id),name = CONVERT(VARCHAR(MAX), name)  FROM reports_entity WITH (NOLOCK)
+2019-02-28 11:00:23=>Executing script: SELECT current_table_name FROM table_snapshot_history WHERE  ind_num = (SELECT MAX(ind_num) FROM  table_snapshot_history WHERE monitored_table_name = 'reports_entity')
+2019-02-28 11:00:23=>Executing script: SELECT  entity_id,name FROM reports_entity_20180315_040854
+2019-02-28 11:00:23=>No changes recorded for reports_entity at 2019-02-28 11:00:23
+2019-02-28 11:00:23=>Executing script: SELECT * FROM column_table_change_history ORDER BY  ind_num DESC LIMIT  10
+2019-02-28 11:00:53=>A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = WritableServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", State: "Disconnected", Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server. ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.<ConnectAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.<CreateStreamAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.<OpenAsyncHelper>d__1.MoveNext()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.<OpenAsyncHelper>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Servers.ClusterableServer.<HeartbeatAsync>d__d.MoveNext()" }] }.
+2019-02-28 11:00:53=>   at MongoDB.Driver.Core.Clusters.Cluster.ThrowTimeoutException(IServerSelector selector, ClusterDescription description)
+   at MongoDB.Driver.Core.Clusters.Cluster.<WaitForDescriptionChangedAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Clusters.Cluster.<SelectServerAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Bindings.WritableServerBinding.<GetChannelSourceAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.<ExecuteAsync>d__c.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.OperationExecutor.<ExecuteWriteOperationAsync>d__3`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<ExecuteWriteOperation>d__39`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<BulkWriteAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MonitoringUtilities.DataCheckProcess.<exportChangesToMongo>d__8.MoveNext()
+=================================================Starting New Data Change Monitoring Session at 2019-02-28 11:08:29=================================================
+2019-02-28 11:08:29=>Number of tables to monitor: 2
+2019-02-28 11:08:29=>1 run for extract_entity
+2019-02-28 11:08:29=>Checking for schema changes
+2019-02-28 11:08:29=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'extract_entity'
+2019-02-28 11:08:29=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'extract_entity'
+2019-02-28 11:08:29=>Executing script: SELECT TABLE_NAME, COLUMN_NAME,ORDINAL_POSITION,COLUMN_DEFAULT,IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM  schema_table WHERE  table_name = 'extract_entity'
+2019-02-28 11:08:29=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'extract_entity'
+2019-02-28 11:08:29=>Running: DELETE FROM  schema_table WHERE  table_name = 'extract_entity'
+2019-02-28 11:08:29=>Query complete
+2019-02-28 11:08:29=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'extract_entity'
+2019-02-28 11:08:29=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','entity_id','1','','NO','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','plugin_id','2','','NO','varchar','20')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','name','3','','NO','varchar','30')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','standard_output','4','','NO','varchar','255')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','standard_output_list','5','','YES','varchar','4000')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','method_value','6','','NO','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','method_param_list','7','','YES','varchar','255')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','user_param_list','8','','YES','varchar','255')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','node_name_list_method','9','','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','node_name_list','10','','YES','varchar','1023')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','extract_pan_in_clear','11','((0))','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','retention_period','12','','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','include_screened_only','13','','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','primary_extract_entity','14','((0))','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('extract_entity','retention_period_cleaner','15','','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table_change_history( table_name,change_time,change_type,affected_columns,change_description) VALUES( 'extract_entity','2019-02-28 11:08:30','ALTER/CREATE','table_name:extract_entity;column_name:entity_id;ordinal_position:1;column_default:;is_nullable:NO;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:plugin_id;ordinal_position:2;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:20~table_name:extract_entity;column_name:name;ordinal_position:3;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:30~table_name:extract_entity;column_name:standard_output;ordinal_position:4;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:255~table_name:extract_entity;column_name:standard_output_list;ordinal_position:5;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:4000~table_name:extract_entity;column_name:method_value;ordinal_position:6;column_default:;is_nullable:NO;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:method_param_list;ordinal_position:7;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:255~table_name:extract_entity;column_name:user_param_list;ordinal_position:8;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:255~table_name:extract_entity;column_name:node_name_list_method;ordinal_position:9;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:node_name_list;ordinal_position:10;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:1023~table_name:extract_entity;column_name:extract_pan_in_clear;ordinal_position:11;column_default:((0));is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:retention_period;ordinal_position:12;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:include_screened_only;ordinal_position:13;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:primary_extract_entity;ordinal_position:14;column_default:((0));is_nullable:YES;data_type:int;character_maximum_length:~table_name:extract_entity;column_name:retention_period_cleaner;ordinal_position:15;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:entity_id;column_name:1;ordinal_position:;column_default:NO;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:plugin_id;column_name:2;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:20;character_maximum_length:extract_entity~table_name:name;column_name:3;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:30;character_maximum_length:extract_entity~table_name:standard_output;column_name:4;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:255;character_maximum_length:extract_entity~table_name:standard_output_list;column_name:5;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:4000;character_maximum_length:extract_entity~table_name:method_value;column_name:6;ordinal_position:;column_default:NO;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:method_param_list;column_name:7;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:255;character_maximum_length:extract_entity~table_name:user_param_list;column_name:8;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:255;character_maximum_length:extract_entity~table_name:node_name_list_method;column_name:9;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:node_name_list;column_name:10;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:1023;character_maximum_length:extract_entity~table_name:extract_pan_in_clear;column_name:11;ordinal_position:((0));column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:retention_period;column_name:12;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:include_screened_only;column_name:13;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:primary_extract_entity;column_name:14;ordinal_position:((0));column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~table_name:retention_period_cleaner;column_name:15;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:extract_entity~','Row differences recorded')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Checking for DML changes
+2019-02-28 11:08:30=>Checking for DML changes
+2019-02-28 11:08:30=>Executing script: SELECT  entity_id = CONVERT(VARCHAR(MAX), entity_id),name = CONVERT(VARCHAR(MAX), name)  FROM extract_entity WITH (NOLOCK)
+2019-02-28 11:08:30=>Executing script: SELECT current_table_name FROM table_snapshot_history WHERE  ind_num = (SELECT MAX(ind_num) FROM  table_snapshot_history WHERE monitored_table_name = 'extract_entity')
+2019-02-28 11:08:30=>Executing script: SELECT  entity_id,name FROM extract_entity_20180111_104541
+2019-02-28 11:08:30=>No changes recorded for extract_entity at 2019-02-28 11:08:30
+2019-02-28 11:08:30=>2 run for reports_entity
+2019-02-28 11:08:30=>Checking for schema changes
+2019-02-28 11:08:30=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'reports_entity'
+2019-02-28 11:08:30=>Executing script: SELECT ind_num FROM   schema_table  WHERE table_name = 'reports_entity'
+2019-02-28 11:08:30=>Executing script: SELECT TABLE_NAME, COLUMN_NAME,ORDINAL_POSITION,COLUMN_DEFAULT,IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM  schema_table WHERE  table_name = 'reports_entity'
+2019-02-28 11:08:30=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'reports_entity'
+2019-02-28 11:08:30=>Running: DELETE FROM  schema_table WHERE  table_name = 'reports_entity'
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Executing script: SELECT COLUMN_NAME,ORDINAL_POSITION = CONVERT(VARCHAR(20),ORDINAL_POSITION), COLUMN_DEFAULT = CONVERT(VARCHAR(255),  COLUMN_DEFAULT),IS_NULLABLE = CONVERT(VARCHAR(255), IS_NULLABLE ), DATA_TYPE,CHARACTER_MAXIMUM_LENGTH =  CONVERT(VARCHAR(255), CHARACTER_MAXIMUM_LENGTH), TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'reports_entity'
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','entity_id','1','','NO','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','name','2','','YES','varchar','300')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','plugin_id','3','','NO','varchar','20')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','user_param_list','4','','YES','varchar','255')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table (table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length ) VALUES('reports_entity','template_id','5','','YES','int','')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Running: INSERT INTO schema_table_change_history( table_name,change_time,change_type,affected_columns,change_description) VALUES( 'reports_entity','2019-02-28 11:08:30','ALTER/CREATE','table_name:reports_entity;column_name:entity_id;ordinal_position:1;column_default:;is_nullable:NO;data_type:int;character_maximum_length:~table_name:reports_entity;column_name:name;ordinal_position:2;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:300~table_name:reports_entity;column_name:plugin_id;ordinal_position:3;column_default:;is_nullable:NO;data_type:varchar;character_maximum_length:20~table_name:reports_entity;column_name:user_param_list;ordinal_position:4;column_default:;is_nullable:YES;data_type:varchar;character_maximum_length:255~table_name:reports_entity;column_name:template_id;ordinal_position:5;column_default:;is_nullable:YES;data_type:int;character_maximum_length:~table_name:entity_id;column_name:1;ordinal_position:;column_default:NO;is_nullable:int;data_type:;character_maximum_length:reports_entity~table_name:name;column_name:2;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:300;character_maximum_length:reports_entity~table_name:plugin_id;column_name:3;ordinal_position:;column_default:NO;is_nullable:varchar;data_type:20;character_maximum_length:reports_entity~table_name:user_param_list;column_name:4;ordinal_position:;column_default:YES;is_nullable:varchar;data_type:255;character_maximum_length:reports_entity~table_name:template_id;column_name:5;ordinal_position:;column_default:YES;is_nullable:int;data_type:;character_maximum_length:reports_entity~','Row differences recorded')
+2019-02-28 11:08:30=>Query complete
+2019-02-28 11:08:30=>Checking for DML changes
+2019-02-28 11:08:30=>Checking for DML changes
+2019-02-28 11:08:30=>Executing script: SELECT  entity_id = CONVERT(VARCHAR(MAX), entity_id),name = CONVERT(VARCHAR(MAX), name)  FROM reports_entity WITH (NOLOCK)
+2019-02-28 11:08:30=>Executing script: SELECT current_table_name FROM table_snapshot_history WHERE  ind_num = (SELECT MAX(ind_num) FROM  table_snapshot_history WHERE monitored_table_name = 'reports_entity')
+2019-02-28 11:08:30=>Executing script: SELECT  entity_id,name FROM reports_entity_20180315_040854
+2019-02-28 11:08:30=>No changes recorded for reports_entity at 2019-02-28 11:08:30
+2019-02-28 11:08:30=>Executing script: SELECT * FROM column_table_change_history ORDER BY  ind_num DESC LIMIT  10
+2019-02-28 11:09:00=>A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = WritableServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", State: "Disconnected", Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server. ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.<ConnectAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.<CreateStreamAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.<OpenAsyncHelper>d__1.MoveNext()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.<OpenAsyncHelper>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Servers.ClusterableServer.<HeartbeatAsync>d__d.MoveNext()" }] }.
+2019-02-28 11:09:00=>   at MongoDB.Driver.Core.Clusters.Cluster.ThrowTimeoutException(IServerSelector selector, ClusterDescription description)
+   at MongoDB.Driver.Core.Clusters.Cluster.<WaitForDescriptionChangedAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Clusters.Cluster.<SelectServerAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Bindings.WritableServerBinding.<GetChannelSourceAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.<ExecuteAsync>d__c.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.OperationExecutor.<ExecuteWriteOperationAsync>d__3`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<ExecuteWriteOperation>d__39`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<BulkWriteAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MonitoringUtilities.DataCheckProcess.<exportChangesToMongo>d__8.MoveNext()
